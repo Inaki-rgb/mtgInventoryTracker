@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bienvenidos a Magic: The Gathering Inventory Tracker</h1>
+    <h2>Para iniciar, ingrese la carta que este buscando. No hace falta poner nombre completo ya que la busqueda trae todo match a su input.</h2>
+    <p>Si no conoce de Magic: The Gathering pruebe ingresando "Llanowar Elves" o "Hydra" y hacer click en una carta para agregarla a su inventario.</p>
+    <form id="card-form">
+        <label for="card-name">Nombre de la carta:</label>
+        <input type="text" id="card-name" name="card-name">
+        <input type="submit" value="Submit">
+        <button id="clear-button">Eliminar Imagenes</button>
+    </form>
+    <div class="card-container" id="card-image"></div>
+    <div id="cards-table">
+        <h3>Aca tenemos la tabla que permite ver que cartas tiene almacenadas hasta el momento.</h3>
+        <table id="saved-cards-table">
+            <thead>
+                <tr>
+                <th>Nombre</th>
+                <th>Edición</th>
+                <th>Rareza</th>
+                <th>Tipo</th>
+                <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="saved-cards-tbody"></tbody>
+        </table>
+        <button id="clear-local-storage">Eliminar Inventario</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

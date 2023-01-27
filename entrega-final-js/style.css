@@ -1,0 +1,25 @@
+.card-container {
+    display: block;
+}
+
+.card-container img {
+    flex: 1;
+    margin: 0 5px;
+    max-width: 250px;
+    max-height: 300px;
+}
+
+.card-container img:hover {
+    /* add styles for hover effect */
+    box-shadow: 0 0 15px rgb(6, 219, 238);
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
